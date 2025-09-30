@@ -11,13 +11,11 @@ export default defineConfig({
   build: {
     outDir: "dist",
     sourcemap: true,
-    // Optimize for production
-    minify: "terser",
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      },
+    // Use esbuild for minification (default, no terser needed)
+    minify: "esbuild",
+    target: "esnext",
+    esbuild: {
+      drop: ["console", "debugger"], // removes console.log + debugger in prod
     },
     // Enable chunk splitting for better caching
     rollupOptions: {
