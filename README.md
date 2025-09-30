@@ -20,15 +20,10 @@ Automata-Drawing-Tools/
 │   └── images/               # Images and icons
 ├── docs/                     # Documentation
 │   ├── CANVAS-WALKTHROUGH.md
-│   ├── CLEANUP-SUMMARY.md
-│   ├── CSS-ARCHITECTURE.md
 │   ├── FEATURE-WALKTHROUGH.md
 │   ├── HOMEPAGE-WALKTHROUGH.md
-│   ├── RESTRUCTURE-SUMMARY.md
-│   ├── UI-WALKTHROUGH.md
-│   └── README-React.md
-├── scripts/                  # Build and setup scripts
-│   └── setup-react.sh
+│   ├── SEO-OPTIMIZATION.md
+│   └── UI-WALKTHROUGH.md
 ├── src/
 │   ├── components/           # React components
 │   │   ├── layout/          # Layout components
@@ -83,8 +78,8 @@ Automata-Drawing-Tools/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/automata-drawing-tools.git
-   cd automata-drawing-tools
+   git clone https://github.com/Phal-Sovandy/Automata-Drawing-Tool.git
+   cd Automata-Drawing-Tool
    ```
 
 2. **Install dependencies**
