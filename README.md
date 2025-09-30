@@ -1,6 +1,12 @@
 # Automata Drawing Tools
 
-A modern React application for designing and visualizing finite state machines, pushdown automata, and Turing machines by Phal Sovandy.
+<div align="center">
+  <img src="assets/images/favicon.png" alt="Automata Drawing Tools Logo" width="80" height="80">
+  
+  <img src="assets/images/Repo-cover.jpeg" alt="Automata Drawing Tools - Repository Cover" width="100%">
+  
+  <p><em>A modern React application for designing and visualizing finite state machines, pushdown automata, and Turing machines by Phal Sovandy.</em></p>
+</div>
 
 ## Features
 
@@ -18,12 +24,11 @@ A modern React application for designing and visualizing finite state machines, 
 Automata-Drawing-Tools/
 ├── assets/                    # Static assets
 │   └── images/               # Images and icons
-├── docs/                     # Documentation
-│   ├── CANVAS-WALKTHROUGH.md
-│   ├── FEATURE-WALKTHROUGH.md
-│   ├── HOMEPAGE-WALKTHROUGH.md
-│   ├── SEO-OPTIMIZATION.md
-│   └── UI-WALKTHROUGH.md
+│       ├── canvas-walkthrough/  # Canvas guide images
+│       ├── homepage-walkthrough/ # Homepage guide images
+│       ├── Repo-cover.jpeg      # Repository cover image
+│       ├── bmc-logo.svg         # BuyMeACoffee logo
+│       └── favicon.png          # Site favicon
 ├── src/
 │   ├── components/           # React components
 │   │   ├── layout/          # Layout components
@@ -41,8 +46,7 @@ Automata-Drawing-Tools/
 │   │   │   ├── ImportOptionsModal.jsx
 │   │   │   ├── NewDiagramModal.jsx
 │   │   │   ├── SettingsModal.jsx
-│   │   │   ├── ShortcutsModal.jsx
-│   │   │   └── UIWalkthroughModal.jsx
+│   │   │   └── ShortcutsModal.jsx
 │   │   ├── ui/              # UI components
 │   │   │   ├── ColorPicker.jsx
 │   │   │   ├── Dropdown.jsx
@@ -105,19 +109,9 @@ Automata-Drawing-Tools/
 
 1. Click "Create New Diagram" on the homepage
 2. Choose your automata type (DFA, NFA, PDA, Turing Machine)
-3. Add states by clicking on the canvas
+3. Add states by double clicking on the canvas
 4. Connect states with transitions
 5. Set start and accept states
-
-### Keyboard Shortcuts
-
-- `Ctrl+N`: New diagram
-- `Ctrl+S`: Save diagram
-- `Ctrl+O`: Open diagram
-- `Ctrl+E`: Export diagram
-- `Ctrl+Z`: Undo
-- `Ctrl+Y`: Redo
-- `Delete`: Delete selected elements
 
 ### Export Options
 
@@ -142,14 +136,6 @@ Update the following files with your information:
 - Modify `src/styles/themes/colors.css` for color schemes
 - Update `src/styles/components/` for component-specific styles
 - Add new themes in `src/styles/themes/`
-
-## Documentation
-
-- [Canvas Walkthrough](docs/CANVAS-WALKTHROUGH.md) - Learn how to use the canvas
-- [Feature Walkthrough](docs/FEATURE-WALKTHROUGH.md) - Explore all features
-- [Homepage Walkthrough](docs/HOMEPAGE-WALKTHROUGH.md) - Homepage guide
-- [UI Walkthrough](docs/UI-WALKTHROUGH.md) - User interface guide
-- [SEO Optimization](docs/SEO-OPTIMIZATION.md) - SEO implementation guide
 
 ## Contributing
 

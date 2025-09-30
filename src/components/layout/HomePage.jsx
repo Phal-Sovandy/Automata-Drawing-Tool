@@ -792,6 +792,25 @@ const HomePage = ({ onNavigateToApp }) => {
           setHomePageWalkthroughOpen(false);
           localStorage.setItem("homepage-walkthrough-shown", "true");
         }}
+        onCreateNew={handleCreateNew}
+        onImportClick={handleImportClick}
+        onExportClick={handleExportClick}
+        onSettingsClick={handleSettingsClick}
+        onSearchFocus={() => {
+          const searchInput = document.querySelector(".search-input");
+          if (searchInput) {
+            searchInput.focus();
+          }
+        }}
+        onSortClick={() => {
+          const sortDropdown = document.querySelector(
+            ".custom-dropdown-trigger"
+          );
+          if (sortDropdown) {
+            sortDropdown.click();
+          }
+        }}
+        onClearStorage={handleClearStorage}
       />
 
       {/* Tooltip components */}

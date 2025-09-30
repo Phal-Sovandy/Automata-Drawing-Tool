@@ -1,6 +1,16 @@
 import React, { useState, useEffect } from "react";
 
-const HomePageWalkthroughModal = ({ isOpen, onClose }) => {
+const HomePageWalkthroughModal = ({
+  isOpen,
+  onClose,
+  onCreateNew,
+  onImportClick,
+  onExportClick,
+  onSettingsClick,
+  onSearchFocus,
+  onSortClick,
+  onClearStorage,
+}) => {
   const [activeSection, setActiveSection] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -27,33 +37,39 @@ const HomePageWalkthroughModal = ({ isOpen, onClose }) => {
   const sections = [
     {
       id: "welcome",
-      title: "🏠 Homepage Overview",
-      background: "/walkthroughImage.jpeg",
+      title: "Homepage Dashboard",
+      icon: "fas fa-home",
+      background: "/assets/images/homepage-walkthrough/Home-guide-1.png",
     },
     {
       id: "storage",
-      title: "📊 Storage Management",
-      background: "/walkthrough2.jpeg",
+      title: "Storage Gauge",
+      icon: "fas fa-database",
+      background: "/assets/images/homepage-walkthrough/Home-guide-2.png",
     },
     {
       id: "diagrams",
-      title: "📋 Diagram Management",
-      background: "/walkthroughImage.jpeg",
+      title: "Diagram Gallery",
+      icon: "fas fa-th-large",
+      background: "/assets/images/homepage-walkthrough/Home-guide-3.png",
     },
     {
-      id: "search",
-      title: "🔍 Search & Sort",
-      background: "/walkthrough2.jpeg",
+      id: "bulk",
+      title: "Bulk Operations",
+      icon: "fas fa-layer-group",
+      background: "/assets/images/homepage-walkthrough/Home-guide-4.png",
     },
     {
       id: "create",
-      title: "➕ Create New",
-      background: "/walkthroughImage.jpeg",
+      title: "Quick Create",
+      icon: "fas fa-plus-circle",
+      background: "/assets/images/homepage-walkthrough/Home-guide-5.png",
     },
     {
       id: "actions",
-      title: "⚙️ Actions & Settings",
-      background: "/walkthrough2.jpeg",
+      title: "Toolbar Actions",
+      icon: "fas fa-tools",
+      background: "/assets/images/homepage-walkthrough/Home-guide-6.png",
     },
   ];
 
@@ -86,24 +102,31 @@ const HomePageWalkthroughModal = ({ isOpen, onClose }) => {
 
           <div className="walkthrough-overlay">
             <div className="walkthrough-content">
-              <h2 className="walkthrough-title">Homepage Features</h2>
+              <h2
+                className={`walkthrough-title ${
+                  isTransitioning ? "fade-out" : "fade-in"
+                }`}
+              >
+                <i className={sections[activeSection].icon}></i>
+                {sections[activeSection].title}
+              </h2>
               <p
                 className={`walkthrough-description ${
                   isTransitioning ? "fade-out" : "fade-in"
                 }`}
               >
                 {activeSection === 0 &&
-                  "Welcome to your FSM Designer homepage! This is your central hub for managing all your diagrams and accessing key features."}
+                  "Your central command center for automata design. The homepage provides quick access to all your saved diagrams, creation tools, and management features in one organized interface."}
                 {activeSection === 1 &&
-                  "Monitor your browser storage usage with the real-time gauge. See how much space your diagrams are using and clear storage when needed."}
+                  "Track your browser storage usage with the live storage gauge. Monitor how much space your diagrams consume, view storage statistics, and clear all data when needed to free up space."}
                 {activeSection === 2 &&
-                  "View all your saved diagrams in organized cards. Each diagram shows its name, type, state count, and last modified date."}
+                  "Browse your diagram collection in an organized gallery view. Each card displays the diagram name, automata type (DFA/NFA/PDA), state count, and last modification timestamp for easy identification."}
                 {activeSection === 3 &&
-                  "Find diagrams quickly using the search bar. Sort by date, name, or number of states to organize your collection."}
+                  "Perform bulk operations on your diagram collection. Import multiple diagrams from backup files, export your entire collection as a single file, or manage large sets of automata diagrams efficiently."}
                 {activeSection === 4 &&
-                  "Create new diagrams with the 'New Diagram' button. Choose from FSM, DFA, or NFA types to start your design."}
+                  "Start creating new automata diagrams instantly. Choose from different automata types (DFA, NFA, PDA, Turing Machine) and begin designing your finite state machines with a single click."}
                 {activeSection === 5 &&
-                  "Access settings, help, and additional features. Use the UI walkthrough to learn more about the application."}
+                  "Access essential toolbar functions and application settings. Use search and sort features, access help documentation, adjust preferences, and explore additional tools for enhanced productivity."}
               </p>
 
               <div className="walkthrough-actions">

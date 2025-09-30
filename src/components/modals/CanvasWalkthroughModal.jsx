@@ -27,38 +27,45 @@ const CanvasWalkthroughModal = ({ isOpen, onClose }) => {
   const sections = [
     {
       id: "welcome",
-      title: "🎨 Canvas Overview",
-      background: "/walkthroughImage.jpeg",
+      title: "Canvas Workspace",
+      icon: "fas fa-compass-drafting",
+      background: "/assets/images/canvas-walkthrough/Canvas-guide-1.png",
     },
     {
       id: "navigation",
-      title: "🖱️ Navigation & Zoom",
-      background: "/walkthrough2.jpeg",
+      title: "Pan & Zoom Controls",
+      icon: "fas fa-expand-arrows-alt",
+      background: "/assets/images/canvas-walkthrough/Canvas-guide-2.png",
     },
     {
       id: "states",
-      title: "🔵 Creating States",
-      background: "/walkthroughImage.jpeg",
+      title: "State Creation",
+      icon: "fas fa-circle",
+      background: "/assets/images/canvas-walkthrough/Canvas-guide-3.png",
     },
     {
       id: "transitions",
-      title: "➡️ Creating Transitions",
-      background: "/walkthrough2.jpeg",
+      title: "Transition Drawing",
+      icon: "fas fa-link",
+      background: "/assets/images/canvas-walkthrough/Canvas-guide-4.png",
     },
     {
       id: "customization",
-      title: "🎨 Visual Customization",
-      background: "/walkthroughImage.jpeg",
+      title: "Color & Styling",
+      icon: "fas fa-palette",
+      background: "/assets/images/canvas-walkthrough/Canvas-guide-5.png",
     },
     {
       id: "tools",
-      title: "🛠️ Canvas Tools",
-      background: "/walkthrough2.jpeg",
+      title: "Sidebar Tools",
+      icon: "fas fa-bars",
+      background: "/assets/images/canvas-walkthrough/Canvas-guide-6.png",
     },
     {
       id: "export",
-      title: "📤 Export & Save",
-      background: "/walkthroughImage.jpeg",
+      title: "Save & Export",
+      icon: "fas fa-save",
+      background: "/assets/images/canvas-walkthrough/Canvas-guide-7.png",
     },
   ];
 
@@ -91,26 +98,33 @@ const CanvasWalkthroughModal = ({ isOpen, onClose }) => {
 
           <div className="walkthrough-overlay">
             <div className="walkthrough-content">
-              <h2 className="walkthrough-title">Canvas Features</h2>
+              <h2
+                className={`walkthrough-title ${
+                  isTransitioning ? "fade-out" : "fade-in"
+                }`}
+              >
+                <i className={sections[activeSection].icon}></i>
+                {sections[activeSection].title}
+              </h2>
               <p
                 className={`walkthrough-description ${
                   isTransitioning ? "fade-out" : "fade-in"
                 }`}
               >
                 {activeSection === 0 &&
-                  "Welcome to the FSM Designer canvas! This is your creative workspace where you'll build beautiful state machine diagrams."}
+                  "Your main workspace for creating automata diagrams. The canvas provides a clean, grid-based environment where you can design finite state machines, pushdown automata, and Turing machines with precision."}
                 {activeSection === 1 &&
-                  "Navigate the canvas with zoom controls and panning. Use mouse wheel to zoom, space+drag to pan, and fit-to-view for optimal layout."}
+                  "Master canvas navigation with intuitive controls. Zoom in/out with mouse wheel or Cmd+/Cmd-, pan by holding space and dragging, and use fit-to-view to center your diagram. Navigate large diagrams effortlessly."}
                 {activeSection === 2 &&
-                  "Create states by clicking anywhere on the canvas. Double-click to edit names, drag to move, and customize colors and types."}
+                  "Add states to your automaton by double-clicking on empty areas of the canvas. Drag to reposition states, double-click on states to toggle them as accept states, and use Shift+click to add self-transitions."}
                 {activeSection === 3 &&
-                  "Connect states with transitions by dragging from one state to another. Add labels, customize curves, and use special characters like ε."}
+                  "Create transitions using Shift+drag: from state to state for regular transitions, from empty area to state for start transitions, and from empty area to empty area for standalone arrows. Add labels and use special symbols like ε (epsilon) for empty transitions."}
                 {activeSection === 4 &&
-                  "Customize your diagrams with color pickers, themes, and visual styles. Switch between light and dark modes for your preference."}
+                  "Personalize your diagrams with rich visual customization. Choose colors for states and transitions, apply different themes, and switch between light/dark modes to match your preference."}
                 {activeSection === 5 &&
-                  "Use canvas tools like grid, alignment, and selection tools. Access undo/redo, validation, and precision tools for professional results."}
+                  "Access the sidebar for essential tools and controls. Use the sidebar to manipulate states and transitions, undo/redo actions, rename diagrams, change diagram types, and adjust state radius size for your automata."}
                 {activeSection === 6 &&
-                  "Export your diagrams as PNG, SVG, PDF, or JSON. Save your work and share your state machines with others."}
+                  "Save and export your work in multiple formats. Export as PNG for presentations, SVG for scalability, LaTeX for academic papers, or JSON for sharing and collaboration."}
               </p>
 
               <div className="walkthrough-actions">
