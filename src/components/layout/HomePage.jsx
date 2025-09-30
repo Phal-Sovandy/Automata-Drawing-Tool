@@ -35,6 +35,7 @@ const HomePage = ({ onNavigateToApp }) => {
   const [exportModalOpen, setExportModalOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [layoutView, setLayoutView] = useState("grid"); // "grid" or "list"
+  const [coffeeModalOpen, setCoffeeModalOpen] = useState(false);
   const [sortBy, setSortBy] = useState("timestamp"); // "timestamp", "name", "states"
   const [sortOrder, setSortOrder] = useState("desc"); // "asc", "desc"
   const [sortDropdownOpen, setSortDropdownOpen] = useState(false);
@@ -299,6 +300,10 @@ const HomePage = ({ onNavigateToApp }) => {
     setSortDropdownOpen(false);
   };
 
+  const handleCoffeeModalOpen = () => {
+    setCoffeeModalOpen(true);
+  };
+
   const toggleSortOrder = () => {
     setSortOrder(sortOrder === "asc" ? "desc" : "asc");
   };
@@ -355,24 +360,26 @@ const HomePage = ({ onNavigateToApp }) => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
-          <div className="hero-icon">
-            <i className="fas fa-compass-drafting"></i>
+          <div className="hero-content-left">
+            <div className="hero-icon">
+              <i className="fas fa-compass-drafting"></i>
+            </div>
+            <h1 className="hero-title">
+              Automata Drawing Tools
+              <span className="hero-subtitle">
+                by{" "}
+                <a
+                  href="https://www.phal-sovandy.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="portfolio-link"
+                >
+                  Phal Sovandy
+                  <i className="fas fa-external-link-alt portfolio-icon"></i>
+                </a>
+              </span>
+            </h1>
           </div>
-          <h1 className="hero-title">
-            Automata Drawing Tools
-            <span className="hero-subtitle">
-              by{" "}
-              <a
-                href="https://www.phal-sovandy.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="portfolio-link"
-              >
-                Phal Sovandy
-                <i className="fas fa-external-link-alt portfolio-icon"></i>
-              </a>
-            </span>
-          </h1>
           <p className="hero-description">
             Create and visualize finite state machines, automata, and
             computational models with our intuitive drag-and-drop editor. Design
@@ -425,7 +432,7 @@ const HomePage = ({ onNavigateToApp }) => {
       <section className="action-buttons-section">
         <div className="action-buttons-grid">
           <a
-            href="https://github.com/your-username/automata-drawing-tools"
+            href="https://github.com/Phal-Sovandy/Automata-Drawing-Tool"
             target="_blank"
             rel="noopener noreferrer"
             className="action-button github-button"
@@ -434,18 +441,16 @@ const HomePage = ({ onNavigateToApp }) => {
             <span>Git Repository</span>
           </a>
 
-          <a
-            href="https://buymeacoffee.com/phalsovandy"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
             className="action-button coffee-button"
+            onClick={handleCoffeeModalOpen}
           >
             <i className="fas fa-coffee"></i>
             <span>Buy me Coffee</span>
-          </a>
+          </button>
 
           <a
-            href="https://your-resource-link.com"
+            href="https://youtube.com/playlist?list=PLxlNTqqJuQeAqTd9ItjbcjiXiIxb1ToVE&si=xEeaL8A0ZJGm_Ums"
             target="_blank"
             rel="noopener noreferrer"
             className="action-button resource-button"
@@ -455,7 +460,7 @@ const HomePage = ({ onNavigateToApp }) => {
           </a>
 
           <a
-            href="https://github.com/your-username/automata-drawing-tools/issues"
+            href="https://github.com/Phal-Sovandy/Automata-Drawing-Tool/issues"
             target="_blank"
             rel="noopener noreferrer"
             className="action-button report-button"
@@ -518,6 +523,29 @@ const HomePage = ({ onNavigateToApp }) => {
           </button>
         </div>
         <div className="diagrams-controls">
+          {/* Primary Actions */}
+          <div className="primary-actions">
+            <button
+              className="create-new-btn primary"
+              onClick={handleCreateNew}
+              data-tooltip-id="create-new-tooltip"
+              data-tooltip-content={`Create New Diagram (${SHORTCUTS.CREATE_NEW})`}
+            >
+              <i className="fas fa-plus"></i>
+              <span>Create New</span>
+            </button>
+            <button
+              className="action-btn secondary"
+              onClick={handleImportClick}
+              data-tooltip-id="import-tooltip"
+              data-tooltip-content="Import Diagram"
+            >
+              <i className="fas fa-upload"></i>
+              <span>Import</span>
+            </button>
+          </div>
+
+          {/* Search */}
           <div className="search-container">
             <i className="fas fa-search search-icon"></i>
             <input
@@ -528,6 +556,8 @@ const HomePage = ({ onNavigateToApp }) => {
               className="search-input"
             />
           </div>
+
+          {/* Sort */}
           <div className="sort-container">
             <div className="custom-dropdown">
               <div
@@ -535,7 +565,6 @@ const HomePage = ({ onNavigateToApp }) => {
                 onClick={() => setSortDropdownOpen(!sortDropdownOpen)}
               >
                 <span>
-                  Sort by:{" "}
                   {sortOptions.find((opt) => opt.value === sortBy)?.label}
                 </span>
                 <span className="dropdown-arrow">
@@ -573,6 +602,8 @@ const HomePage = ({ onNavigateToApp }) => {
               ></i>
             </button>
           </div>
+
+          {/* View Toggle */}
           <div className="layout-toggle">
             <button
               className={`layout-btn ${layoutView === "grid" ? "active" : ""}`}
@@ -591,7 +622,17 @@ const HomePage = ({ onNavigateToApp }) => {
               <i className="fas fa-list"></i>
             </button>
           </div>
-          <div className="diagrams-actions">
+
+          {/* Secondary Actions */}
+          <div className="secondary-actions">
+            <button
+              className="action-btn"
+              onClick={handleExportClick}
+              data-tooltip-id="export-tooltip"
+              data-tooltip-content="Export Diagram"
+            >
+              <i className="fas fa-download"></i>
+            </button>
             <button
               className="action-btn"
               onClick={handleSettingsClick}
@@ -604,35 +645,9 @@ const HomePage = ({ onNavigateToApp }) => {
               className="action-btn"
               onClick={() => setHomePageWalkthroughOpen(true)}
               data-tooltip-id="walkthrough-tooltip"
-              data-tooltip-content="Homepage Walkthrough"
+              data-tooltip-content="Help"
             >
               <i className="fas fa-question-circle"></i>
-            </button>
-            <button
-              className="action-btn"
-              onClick={handleExportClick}
-              data-tooltip-id="export-tooltip"
-              data-tooltip-content="Export Diagram"
-            >
-              <i className="fas fa-save"></i>
-            </button>
-            <button
-              className="action-btn"
-              onClick={handleImportClick}
-              data-tooltip-id="import-tooltip"
-              data-tooltip-content="Import Diagram"
-            >
-              <i className="fas fa-download"></i>
-              <span>Import Diagram</span>
-            </button>
-            <button
-              className="create-new-btn"
-              onClick={handleCreateNew}
-              data-tooltip-id="create-new-tooltip"
-              data-tooltip-content={`Create New Diagram (${SHORTCUTS.CREATE_NEW})`}
-            >
-              <i className="fas fa-paint-brush"></i>
-              <span>Create New</span>
             </button>
           </div>
         </div>
@@ -890,6 +905,86 @@ const HomePage = ({ onNavigateToApp }) => {
           padding: "6px 8px",
         }}
       />
+
+      {/* Coffee Support Modal */}
+      {coffeeModalOpen && (
+        <div
+          className="modal-overlay support-modal"
+          onClick={() => setCoffeeModalOpen(false)}
+        >
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h2 className="modal-title">Support Options</h2>
+              <p className="modal-subtitle">
+                Choose your preferred way to support the development of this
+                tool
+              </p>
+              <button
+                className="modal-close"
+                onClick={() => setCoffeeModalOpen(false)}
+              >
+                ×
+              </button>
+            </div>
+
+            <div className="modal-body">
+              <div className="support-options">
+                {/* BuyMeACoffee Option */}
+                <div
+                  className="support-option"
+                  onClick={() => {
+                    window.open(
+                      "https://buymeacoffee.com/phalsovandy",
+                      "_blank"
+                    );
+                    setCoffeeModalOpen(false);
+                  }}
+                >
+                  <div className="support-option-header">
+                    <div className="support-option-icon">
+                      <img
+                        src="/assets/images/bmc-logo.svg"
+                        alt="BuyMeACoffee"
+                        className="bmc-logo"
+                      />
+                    </div>
+                    <h3 className="support-option-title">BuyMeACoffee</h3>
+                  </div>
+                  <p className="support-option-description">
+                    Support with a coffee through our international platform.
+                    Quick and easy payment with credit card or PayPal.
+                  </p>
+                </div>
+
+                {/* ABA Bank Option */}
+                <div
+                  className="support-option"
+                  onClick={() => {
+                    window.open(
+                      "https://pay.ababank.com/oRF8/dwujr1pk",
+                      "_blank"
+                    );
+                    setCoffeeModalOpen(false);
+                  }}
+                >
+                  <div className="support-option-header">
+                    <div className="support-option-icon">
+                      <i className="fas fa-university"></i>
+                    </div>
+                    <h3 className="support-option-title">
+                      ABA<span className="red-apostrophe">'</span> Bank
+                    </h3>
+                  </div>
+                  <p className="support-option-description">
+                    Direct bank transfer using ABA Bank. Account holder: PHAL
+                    SOVANDY, Account number: 005 660 975.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

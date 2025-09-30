@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 const AboutModal = ({ isOpen, onClose }) => {
+  const [coffeeModalOpen, setCoffeeModalOpen] = useState(false);
+
+  const handleCoffeeModalOpen = () => {
+    setCoffeeModalOpen(true);
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -32,17 +38,15 @@ const AboutModal = ({ isOpen, onClose }) => {
               </div>
             </div>
             <div className="modal-buttons-section">
-              <a
-                href="https://www.buymeacoffee.com/phalsovandy"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
                 className="header-btn coffee-btn"
+                onClick={handleCoffeeModalOpen}
               >
                 <i className="fas fa-coffee"></i>
                 Buy me coffee
-              </a>
+              </button>
               <a
-                href="https://github.com/Phal-Sovandy/Automata-Drawing-Tools"
+                href="https://github.com/Phal-Sovandy/Automata-Drawing-Tool"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="header-btn git-btn"
@@ -174,6 +178,86 @@ const AboutModal = ({ isOpen, onClose }) => {
           </div>
         </div>
       </div>
+
+      {/* Coffee Support Modal */}
+      {coffeeModalOpen && (
+        <div
+          className="modal-overlay support-modal"
+          onClick={() => setCoffeeModalOpen(false)}
+        >
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h2 className="modal-title">Support Options</h2>
+              <p className="modal-subtitle">
+                Choose your preferred way to support the development of this
+                tool
+              </p>
+              <button
+                className="modal-close"
+                onClick={() => setCoffeeModalOpen(false)}
+              >
+                ×
+              </button>
+            </div>
+
+            <div className="modal-body">
+              <div className="support-options">
+                {/* BuyMeACoffee Option */}
+                <div
+                  className="support-option"
+                  onClick={() => {
+                    window.open(
+                      "https://buymeacoffee.com/phalsovandy",
+                      "_blank"
+                    );
+                    setCoffeeModalOpen(false);
+                  }}
+                >
+                  <div className="support-option-header">
+                    <div className="support-option-icon">
+                      <img
+                        src="/assets/images/bmc-logo.svg"
+                        alt="BuyMeACoffee"
+                        className="bmc-logo"
+                      />
+                    </div>
+                    <h3 className="support-option-title">BuyMeACoffee</h3>
+                  </div>
+                  <p className="support-option-description">
+                    Support with a coffee through our international platform.
+                    Quick and easy payment with credit card or PayPal.
+                  </p>
+                </div>
+
+                {/* ABA Bank Option */}
+                <div
+                  className="support-option"
+                  onClick={() => {
+                    window.open(
+                      "https://pay.ababank.com/oRF8/dwujr1pk",
+                      "_blank"
+                    );
+                    setCoffeeModalOpen(false);
+                  }}
+                >
+                  <div className="support-option-header">
+                    <div className="support-option-icon">
+                      <i className="fas fa-university"></i>
+                    </div>
+                    <h3 className="support-option-title">
+                      ABA<span className="red-apostrophe">'</span> Bank
+                    </h3>
+                  </div>
+                  <p className="support-option-description">
+                    Direct bank transfer using ABA Bank. Account holder: PHAL
+                    SOVANDY, Account number: 005 660 975.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
