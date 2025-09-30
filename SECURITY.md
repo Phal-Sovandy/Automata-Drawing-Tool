@@ -176,7 +176,7 @@ For critical security issues (e.g., active exploitation):
 
 We would like to thank the following security researchers who have helped improve our security:
 
-*No security researchers have contributed yet. We welcome security researchers to help improve our project's security.*
+_No security researchers have contributed yet. We welcome security researchers to help improve our project's security._
 
 ## 📄 License
 
