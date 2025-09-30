@@ -1,0 +1,108 @@
+/* Color System - CSS Custom Properties */
+:root {
+  /* Light Theme Colors */
+  --color-primary: #36454f;
+  --color-primary-hover: #2a3439;
+  --color-primary-light: #4a5a64;
+
+  --color-secondary: #6b7280;
+  --color-secondary-hover: #4b5563;
+
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+
+  --color-success: #10b981;
+  --color-success-hover: #059669;
+
+  --color-warning: #f59e0b;
+  --color-warning-hover: #d97706;
+
+  --color-danger: #ef4444;
+  --color-danger-hover: #dc2626;
+
+  /* Background Colors */
+  --color-background: #f8f9fa;
+  --color-background-secondary: #ffffff;
+  --color-background-tertiary: #f5f5f5;
+  --color-background-quaternary: #fafafa;
+
+  /* Text Colors */
+  --color-text: #111827;
+  --color-text-secondary: #374151;
+  --color-text-tertiary: #6b7280;
+  --color-text-quaternary: #9ca3af;
+
+  /* Border Colors */
+  --color-border: #e0e0e0;
+  --color-border-secondary: #d1d5db;
+  --color-border-tertiary: #e5e7eb;
+
+  /* Shadow Colors */
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-shadow-secondary: rgba(0, 0, 0, 0.05);
+  --color-shadow-tertiary: rgba(0, 0, 0, 0.15);
+
+  /* Canvas Colors */
+  --color-canvas-background: #fafafa;
+  --color-canvas-grid: #d1d5db;
+
+  /* State Colors */
+  --color-state-normal: #3b82f6;
+  --color-state-final: #f59e0b;
+  --color-state-reject: #ef4444;
+  --color-transition: #10b981;
+}
+
+/* Dark Theme Colors */
+.dark-theme {
+  --color-primary: #36454f;
+  --color-primary-hover: #4a5a64;
+  --color-primary-light: #5a6a74;
+
+  --color-secondary: #9ca3af;
+  --color-secondary-hover: #d1d5db;
+
+  --color-accent: #3b82f6;
+  --color-accent-hover: #2563eb;
+
+  --color-success: #10b981;
+  --color-success-hover: #059669;
+
+  --color-warning: #f59e0b;
+  --color-warning-hover: #d97706;
+
+  --color-danger: #ef4444;
+  --color-danger-hover: #dc2626;
+
+  /* Background Colors */
+  --color-background: #121212;
+  --color-background-secondary: #1a1a1a;
+  --color-background-tertiary: #2a2a2a;
+  --color-background-quaternary: #1e1e1e;
+
+  /* Text Colors */
+  --color-text: #ffffff;
+  --color-text-secondary: #d1d5db;
+  --color-text-tertiary: #9ca3af;
+  --color-text-quaternary: #6b7280;
+
+  /* Border Colors */
+  --color-border: #2a2a2a;
+  --color-border-secondary: #404040;
+  --color-border-tertiary: #333333;
+
+  /* Shadow Colors */
+  --color-shadow: rgba(0, 0, 0, 0.3);
+  --color-shadow-secondary: rgba(0, 0, 0, 0.2);
+  --color-shadow-tertiary: rgba(0, 0, 0, 0.4);
+
+  /* Canvas Colors */
+  --color-canvas-background: #1e1e1e;
+  --color-canvas-grid: #404040;
+
+  /* State Colors */
+  --color-state-normal: #3b82f6;
+  --color-state-final: #f59e0b;
+  --color-state-reject: #ef4444;
+  --color-transition: #10b981;
+}

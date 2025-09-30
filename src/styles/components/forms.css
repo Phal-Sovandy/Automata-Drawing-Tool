@@ -1,0 +1,437 @@
+/* Form Styles */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.375rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--color-border-secondary);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  background: var(--color-background-secondary);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 0.1875rem rgba(59, 130, 246, 0.1);
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border-secondary);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  background: var(--color-background-secondary);
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  resize: vertical;
+  min-height: 7.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 0.1875rem rgba(59, 130, 246, 0.1);
+}
+
+/* Compact form styles */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.form-row .form-group-compact {
+  flex: 1;
+  min-width: 0;
+}
+
+.form-group-compact {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.form-label-compact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.375rem;
+}
+
+.character-count {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+  font-weight: 400;
+}
+
+.form-input-compact {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--color-border-secondary);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  background: var(--color-background-secondary);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  height: 2.0625rem;
+  box-sizing: border-box;
+}
+
+.form-input-compact:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.125rem rgba(54, 69, 79, 0.1);
+}
+
+.form-select-compact {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--color-border-secondary);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  background: var(--color-background-secondary);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+  padding-right: 2rem;
+  height: 2.0625rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.form-select-compact:hover {
+  border-color: var(--color-text-tertiary);
+  background-color: var(--color-background-tertiary);
+}
+
+.form-select-compact:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.125rem rgba(54, 69, 79, 0.1);
+}
+
+/* Custom dropdown styling to match nav menu */
+.form-select-compact option {
+  padding: 0.5rem 0.75rem;
+  background: var(--color-background-secondary);
+  color: var(--color-text-secondary);
+  border: none;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+.form-select-compact option:hover {
+  background-color: var(--color-border-tertiary);
+  color: var(--color-text);
+}
+
+.form-select-compact option:checked {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.form-select-compact option:focus {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Upload Button */
+.upload-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 1rem 0.5rem;
+  background: var(--color-border-tertiary);
+  border: 1px solid var(--color-border-secondary);
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.upload-button:hover {
+  background: var(--color-border-tertiary);
+  border-color: var(--color-text-tertiary);
+}
+
+.upload-icon {
+  font-size: 0.875rem;
+}
+
+.upload-button-compact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+  background: var(--color-border-tertiary);
+  border: 1px solid var(--color-border-secondary);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  height: 2.0625rem;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+.upload-button-compact:hover {
+  background: var(--color-border-tertiary);
+  border-color: var(--color-text-tertiary);
+}
+
+.form-textarea-compact {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border-secondary);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  background: var(--color-background-secondary);
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  resize: vertical;
+  min-height: 7.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-textarea-compact:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.125rem rgba(54, 69, 79, 0.1);
+}
+
+/* Dark theme styles for forms */
+.dark-theme .form-label,
+.dark-theme .form-label-compact {
+  color: var(--color-text);
+}
+
+.dark-theme .character-count {
+  color: var(--color-text-tertiary);
+}
+
+.dark-theme .form-input,
+.dark-theme .form-textarea,
+.dark-theme .form-input-compact,
+.dark-theme .form-textarea-compact,
+.dark-theme .form-select-compact {
+  background: var(--color-background-tertiary);
+  border-color: var(--color-border-secondary);
+  color: var(--color-text);
+}
+
+.dark-theme .form-input:focus,
+.dark-theme .form-textarea:focus,
+.dark-theme .form-input-compact:focus,
+.dark-theme .form-textarea-compact:focus,
+.dark-theme .form-select-compact:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 0.1875rem rgba(59, 130, 246, 0.2);
+}
+
+.dark-theme .form-select-compact {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+}
+
+.dark-theme .form-select-compact:hover {
+  border-color: var(--color-border-tertiary);
+  background-color: var(--color-background-quaternary);
+}
+
+/* Dark theme custom dropdown styling */
+.dark-theme .form-select-compact option {
+  background: var(--color-background-tertiary);
+  color: var(--color-text);
+}
+
+.dark-theme .form-select-compact option:hover {
+  background-color: var(--color-background-quaternary);
+  color: var(--color-text);
+}
+
+.dark-theme .form-select-compact option:checked {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.dark-theme .form-select-compact option:focus {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.dark-theme .upload-button,
+.dark-theme .upload-button-compact {
+  background: var(--color-background-tertiary);
+  border-color: var(--color-border-secondary);
+  color: var(--color-text);
+}
+
+.dark-theme .upload-button:hover,
+.dark-theme .upload-button-compact:hover {
+  background: var(--color-background-quaternary);
+  border-color: var(--color-border-tertiary);
+}
+
+/* Import Modal Specific Styles */
+.import-upload-section {
+  margin-bottom: 1.5rem;
+}
+
+.import-upload-section .upload-button-compact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border: 2px dashed var(--color-border-secondary);
+  border-radius: 8px;
+  background: var(--color-background-secondary);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  min-height: 100px;
+  justify-content: center;
+}
+
+.import-upload-section .upload-button-compact:hover {
+  border-color: var(--color-primary);
+  background: var(--color-background-tertiary);
+  transform: translateY(-1px);
+}
+
+.import-upload-section .upload-button-compact.drag-over {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  background-opacity: 0.1;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.import-upload-section .upload-button-compact.drag-over .upload-icon {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.import-upload-section .upload-button-compact.drag-over .upload-text {
+  color: var(--color-primary);
+}
+
+.import-upload-section .upload-icon {
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.import-upload-section .upload-icon i {
+  font-size: 2rem;
+}
+
+.import-upload-section .upload-text {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.import-upload-section .upload-subtitle {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  opacity: 0.8;
+}
+
+.import-divider {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.import-divider::before,
+.import-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--color-border-secondary);
+}
+
+.import-divider span {
+  padding: 0 1rem;
+  color: var(--color-text-tertiary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Dark theme adjustments */
+.dark-theme .import-upload-section .upload-button-compact {
+  background: var(--color-background-tertiary);
+  border-color: var(--color-border-tertiary);
+}
+
+.dark-theme .import-upload-section .upload-button-compact:hover {
+  background: var(--color-background-quaternary);
+  border-color: var(--color-primary);
+}
+
+.dark-theme .import-upload-section .upload-button-compact.drag-over {
+  background: var(--color-primary);
+  background-opacity: 0.2;
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Error Message Styles */
+.import-error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  color: #dc2626;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.import-error-message i {
+  color: #dc2626;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* Dark theme error message */
+.dark-theme .import-error-message {
+  background: rgba(220, 38, 38, 0.1);
+  border-color: rgba(220, 38, 38, 0.3);
+  color: #fca5a5;
+}
+
+.dark-theme .import-error-message i {
+  color: #fca5a5;
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Automata Drawing Tools",
+  "version": "1.0.0",
+  "description": "A modern React application for designing and visualizing finite state machines, pushdown automata, and Turing machines by Phal Sovandy",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.1",
+    "framer-motion": "^12.23.22",
+    "gsap": "^3.13.0",
+    "jszip": "^3.10.1",
+    "react": "^18.2.0",
+    "react-color": "^2.19.3",
+    "react-dom": "^18.2.0",
+    "react-tooltip": "^5.29.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "vite": "^5.0.8"
+  },
+  "keywords": [
+    "finite-state-machine",
+    "fsm",
+    "automata",
+    "pushdown-automata",
+    "turing-machine",
+    "state-machine",
+    "automata-theory",
+    "computer-science",
+    "diagram",
+    "visualization",
+    "drawing-tools",
+    "react",
+    "vite",
+    "canvas",
+    "svg",
+    "latex",
+    "export",
+    "import",
+    "json",
+    "educational",
+    "learning",
+    "academic",
+    "cadt"
+  ],
+  "author": "Phal Sovandy",
+  "license": "MIT"
+}

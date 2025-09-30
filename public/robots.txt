@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://automata-draw.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow certain paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /src/
+
+# Allow important files
+Allow: /assets/
+Allow: /manifest.json
+Allow: /favicon.ico
