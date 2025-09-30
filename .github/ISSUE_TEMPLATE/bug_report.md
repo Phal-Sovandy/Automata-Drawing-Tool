@@ -1,64 +1,51 @@
 ---
 name: Bug Report
-about: Create a report to help us improve
+about: Report something that's not working correctly
 title: "[BUG] "
 labels: ["bug", "needs-triage"]
 assignees: ""
 ---
 
-## 🐛 Bug Description
+## What's the problem?
 
-A clear and concise description of what the bug is.
+**Describe what went wrong in simple terms:**
+[Example: "When I try to save my diagram, nothing happens"]
 
-## 🔄 Steps to Reproduce
+## What should happen instead?
 
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**What did you expect to happen?**
+[Example: "I expected my diagram to be saved and see a confirmation message"]
 
-## ✅ Expected Behavior
+## How can we reproduce this?
 
-A clear and concise description of what you expected to happen.
+**Tell us the steps to make this problem happen:**
 
-## ❌ Actual Behavior
+1. First, I...
+2. Then, I...
+3. Finally, I...
+4. And then the problem occurs
 
-A clear and concise description of what actually happened.
+## What device/browser are you using?
 
-## 📸 Screenshots
+**Please tell us:**
 
-If applicable, add screenshots to help explain your problem.
+- Device: [e.g., Windows computer, Mac, iPhone, Android phone]
+- Browser: [e.g., Chrome, Firefox, Safari, Edge]
+- Version: [if you know it, e.g., Chrome 96]
 
-## 🖥️ Environment
+## Screenshots (if helpful)
 
-**Desktop:**
+**If you can, add a screenshot showing the problem:**
+[You can drag and drop images here]
 
-- OS: [e.g. Windows 10, macOS 12.0, Ubuntu 20.04]
-- Browser: [e.g. Chrome 96, Firefox 95, Safari 15]
-- Version: [e.g. 1.2.0]
+## Any other details?
 
-**Mobile:**
+**Anything else that might help us understand the problem?**
+[Optional: Add any other information that might be relevant]
 
-- Device: [e.g. iPhone 13, Samsung Galaxy S21]
-- OS: [e.g. iOS 15.1, Android 12]
-- Browser: [e.g. Safari, Chrome Mobile]
-- Version: [e.g. 1.2.0]
+## Checklist
 
-## 📋 Additional Context
-
-Add any other context about the problem here.
-
-## 🔍 Console Errors
-
-If applicable, paste any console errors here:
-
-```
-Paste console errors here
-```
-
-## 📝 Checklist
-
-- [ ] I have searched existing issues to ensure this is not a duplicate
-- [ ] I have provided all the requested information
-- [ ] I have tested this on the latest version
-- [ ] I have included steps to reproduce the issue
+- [ ] I've described the problem clearly
+- [ ] I've explained what should happen instead
+- [ ] I've provided steps to reproduce the issue
+- [ ] I've included my device/browser information

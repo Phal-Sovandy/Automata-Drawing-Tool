@@ -1,80 +1,65 @@
 ---
 name: Documentation
-about: Suggest improvements to documentation
+about: Help us improve our documentation
 title: "[DOCS] "
 labels: ["documentation", "needs-triage"]
 assignees: ""
 ---
 
-## 📚 Documentation Issue
+## What documentation needs improvement?
 
-**What documentation needs to be improved?**
+**What part of our documentation is confusing or missing?**
+[Example: "The installation instructions are hard to follow"]
 
-A clear and concise description of what documentation is missing, unclear, or needs improvement.
+## Where did you find this issue?
 
-## 📍 Location
+**Where is this documentation problem?**
 
-**Where is this documentation issue?**
+- [ ] Main README file
+- [ ] How to contribute guide
+- [ ] User instructions
+- [ ] Help text in the app
+- [ ] Other: [Please specify where]
 
-- [ ] README.md
-- [ ] CONTRIBUTING.md
-- [ ] Code comments
-- [ ] API documentation
-- [ ] User guide
-- [ ] Developer guide
+## What's confusing or missing?
+
+**Describe what's wrong with the current documentation:**
+[Example: "It doesn't explain how to save my work"]
+
+## What would make it better?
+
+**How should we improve it?**
+[Example: "Add step-by-step instructions with screenshots"]
+
+## Who is this for?
+
+**Who would benefit from better documentation?**
+
+- [ ] New users trying the tool for the first time
+- [ ] Students learning how to use it
+- [ ] Teachers showing it to their class
+- [ ] People who want to help improve the project
 - [ ] Other: [Please specify]
 
-## 🎯 Current State
+## What specific help do you need?
 
-**What is the current state of the documentation?**
+**What kind of documentation would help you most?**
 
-Describe what currently exists and what's problematic about it.
-
-## ✨ Desired State
-
-**What should the documentation look like?**
-
-Describe what you'd like to see in the improved documentation.
-
-## 👥 Target Audience
-
-**Who is this documentation for?**
-
-- [ ] New contributors
-- [ ] End users
-- [ ] Developers
-- [ ] Educators
-- [ ] Students
+- [ ] Step-by-step instructions
+- [ ] Video tutorials
+- [ ] Screenshots showing how to do things
+- [ ] Troubleshooting guide
+- [ ] Examples of what you can create
 - [ ] Other: [Please specify]
 
-## 📋 Specific Areas
+## Any suggestions?
 
-**What specific areas need attention?**
+**Do you have ideas for how to make the documentation better?**
+[Optional: Share any specific suggestions you have]
 
-- [ ] Installation instructions
-- [ ] Usage examples
-- [ ] API reference
-- [ ] Troubleshooting
-- [ ] Code examples
-- [ ] Screenshots/videos
-- [ ] Other: [Please specify]
+## Checklist
 
-## 🔗 Related Issues
-
-Link any related issues:
-
-- Related to #123
-- Part of #456
-
-## 💡 Suggestions
-
-**Do you have specific suggestions for improvement?**
-
-If you have ideas for how to improve the documentation, please share them here.
-
-## 📝 Checklist
-
-- [ ] I have clearly described the documentation issue
-- [ ] I have specified the target audience
-- [ ] I have provided suggestions for improvement
-- [ ] I have checked if this is related to existing issues
+- [ ] I've described what documentation needs improvement
+- [ ] I've explained what's confusing or missing
+- [ ] I've suggested how to make it better
+- [ ] I've indicated who would benefit from the improvement

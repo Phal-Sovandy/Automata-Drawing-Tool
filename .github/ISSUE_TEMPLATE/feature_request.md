@@ -1,86 +1,63 @@
 ---
 name: Feature Request
-about: Suggest an idea for this project
+about: Suggest a new feature or improvement
 title: "[FEATURE] "
 labels: ["enhancement", "needs-triage"]
 assignees: ""
 ---
 
-## 🚀 Feature Description
+## What feature would you like to see?
 
-A clear and concise description of the feature you'd like to see implemented.
+**Describe the new feature in simple terms:**
+[Example: "I'd like to be able to change the color of my states"]
 
-## 💡 Motivation
+## Why do you want this feature?
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**What problem would this solve for you?**
+[Example: "Right now all my states look the same, so it's hard to tell them apart"]
 
-## 🎯 Proposed Solution
+## How would you use this feature?
 
-Describe the solution you'd like to see implemented.
+**Give us a specific example:**
+[Example: "I would use different colors to show which states are accepting vs non-accepting"]
 
-## 🔄 Alternatives Considered
+## Where should this feature be located?
 
-Describe any alternative solutions or features you've considered.
+**Where in the app should this feature appear?**
+[Example: "In the sidebar where the other drawing tools are"]
 
-## 📋 Use Cases
+## How important is this to you?
 
-Describe specific use cases for this feature:
+**How much would this help you?**
 
-1. **Use Case 1**: [Description]
-2. **Use Case 2**: [Description]
-3. **Use Case 3**: [Description]
+- [ ] Very important - I really need this
+- [ ] Important - This would be very helpful
+- [ ] Nice to have - This would be cool
+- [ ] Not urgent - Just an idea
 
-## 🎨 UI/UX Considerations
+## Who would use this?
 
-If this feature involves UI changes, please describe:
+**Who do you think would benefit from this feature?**
 
-- **Where** should this feature be located?
-- **How** should users interact with it?
-- **What** should it look like?
-
-## 🔧 Technical Considerations
-
-- Does this require new dependencies?
-- Are there any performance implications?
-- Does this affect existing functionality?
-- Are there any accessibility considerations?
-
-## 📊 Priority
-
-How important is this feature to you?
-
-- [ ] Critical - Blocks my workflow
-- [ ] High - Would significantly improve my experience
-- [ ] Medium - Nice to have
-- [ ] Low - Minor improvement
-
-## 🎯 Target Users
-
-Who would benefit from this feature?
-
-- [ ] Students learning automata theory
-- [ ] Educators teaching computer science
-- [ ] Researchers working with automata
-- [ ] Developers using the tool
+- [ ] Students learning automata
+- [ ] Teachers/professors
+- [ ] Researchers
+- [ ] Anyone using the tool
 - [ ] Other: [Please specify]
 
-## 📸 Mockups/Examples
+## Any examples from other tools?
 
-If applicable, add mockups, wireframes, or examples from other tools:
+**Have you seen this feature in other drawing tools or apps?**
+[If yes, please describe or add a link]
 
-## 🔗 Related Issues
+## Any other ideas?
 
-Link any related issues or discussions:
+**Do you have any other thoughts about how this should work?**
+[Optional: Add any other details or suggestions]
 
-- Related to #123
-- Blocks #456
-- Duplicate of #789
+## Checklist
 
-## 📝 Checklist
-
-- [ ] I have searched existing issues to ensure this is not a duplicate
-- [ ] I have provided a clear description of the feature
-- [ ] I have explained the motivation and use cases
-- [ ] I have considered alternatives
-- [ ] I have provided any relevant technical details
+- [ ] I've described the feature clearly
+- [ ] I've explained why it would be helpful
+- [ ] I've given a specific example of how I'd use it
+- [ ] I've indicated how important this is to me
