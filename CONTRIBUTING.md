@@ -17,7 +17,7 @@ Thank you for your interest in contributing to Automata Drawing Tools! This docu
 
 ## 🤝 Code of Conduct
 
-This project follows a Code of Conduct. By participating, you agree to uphold this code. Please report unacceptable behavior to [your-email@example.com].
+This project follows a Code of Conduct. By participating, you agree to uphold this code. Please report unacceptable behavior to [phalsovandy007@gmail.com].
 
 ## 📄 License
 
@@ -494,7 +494,7 @@ chore(deps): update dependencies
 ### Contact
 
 - **Maintainer**: Phal Sovandy
-- **Email**: [your-email@example.com]
+- **Email**: [phalsovandy007@gmail.com]
 - **GitHub**: [@Phal-Sovandy](https://github.com/Phal-Sovandy)
 
 ## 🙏 Recognition

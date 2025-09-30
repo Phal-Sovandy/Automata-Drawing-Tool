@@ -19,7 +19,7 @@ Security vulnerabilities should be reported privately to prevent exploitation.
 
 ### 2. Email us directly
 
-Send an email to: **security@automata-draw.com**
+Send an email to: **phalsovandy007@gmail.com**
 
 **Include the following information:**
 
@@ -154,7 +154,7 @@ For critical security issues (e.g., active exploitation):
 
 ### Contact Information
 
-- **Security Email**: security@automata-draw.com
+- **Security Email**: phalsovandy007@gmail.com
 - **Maintainer**: Phal Sovandy
 - **GitHub**: [@Phal-Sovandy](https://github.com/Phal-Sovandy)
 
@@ -176,8 +176,7 @@ For critical security issues (e.g., active exploitation):
 
 We would like to thank the following security researchers who have helped improve our security:
 
-- [Security Researcher Name] - [Description of contribution]
-- [Security Researcher Name] - [Description of contribution]
+*No security researchers have contributed yet. We welcome security researchers to help improve our project's security.*
 
 ## 📄 License
 

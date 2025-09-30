@@ -2,7 +2,7 @@
 
 A modern React application for designing and visualizing finite state machines, pushdown automata, and Turing machines by Phal Sovandy.
 
-## 🚀 Features
+## Features
 
 - **Interactive Canvas**: Draw and edit automata with an intuitive drag-and-drop interface
 - **Multiple Automata Types**: Support for DFA, NFA, PDA, and Turing machines
@@ -12,7 +12,7 @@ A modern React application for designing and visualizing finite state machines, 
 - **Keyboard Shortcuts**: Efficient workflow with comprehensive shortcuts
 - **Local Storage**: All data stored locally using IndexedDB
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Automata-Drawing-Tools/
@@ -78,7 +78,7 @@ Automata-Drawing-Tools/
 └── vite.config.js         # Vite configuration
 ```
 
-## 🛠️ Installation
+## Installation
 
 1. **Clone the repository**
 
@@ -104,7 +104,7 @@ Automata-Drawing-Tools/
    npm run build
    ```
 
-## 🎯 Usage
+## Usage
 
 ### Creating Diagrams
 
@@ -131,7 +131,7 @@ Automata-Drawing-Tools/
 - **LaTeX**: For academic papers and documents
 - **JSON**: For backup and sharing
 
-## 🎨 Customization
+## Customization
 
 ### Personal Information
 
@@ -148,7 +148,7 @@ Update the following files with your information:
 - Update `src/styles/components/` for component-specific styles
 - Add new themes in `src/styles/themes/`
 
-## 📚 Documentation
+## Documentation
 
 - [Canvas Walkthrough](docs/CANVAS-WALKTHROUGH.md) - Learn how to use the canvas
 - [Feature Walkthrough](docs/FEATURE-WALKTHROUGH.md) - Explore all features
@@ -156,7 +156,7 @@ Update the following files with your information:
 - [UI Walkthrough](docs/UI-WALKTHROUGH.md) - User interface guide
 - [SEO Optimization](docs/SEO-OPTIMIZATION.md) - SEO implementation guide
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -164,18 +164,18 @@ Update the following files with your information:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 **MIT License Summary:**
 
-- ✅ **Commercial Use**: You can use this software in commercial projects
-- ✅ **Modification**: You can modify the software
-- ✅ **Distribution**: You can distribute the software
-- ✅ **Private Use**: You can use the software privately
-- ✅ **Attribution Required**: You must include the original copyright notice
-- ✅ **No Warranty**: The software is provided "as is" without warranty
+- **Commercial Use**: You can use this software in commercial projects
+- **Modification**: You can modify the software
+- **Distribution**: You can distribute the software
+- **Private Use**: You can use the software privately
+- **Attribution Required**: You must include the original copyright notice
+- **No Warranty**: The software is provided "as is" without warranty
 
 **What this means:**
 
@@ -185,20 +185,21 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - You must keep the copyright notice and license text
 - You cannot hold the author liable for any issues
 
-## 👨‍💻 Author
+## Author
 
 **Phal Sovandy**
 
 - GitHub: [@Phal-Sovandy](https://github.com/Phal-Sovandy)
 - LinkedIn: [sovandy-phal-382069331](https://www.linkedin.com/in/sovandy-phal-382069331/)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - React team for the amazing framework
 - Vite for the fast build tool
 - Font Awesome for the icons
+- Cursor AI for development assistance and code generation
 - All contributors and users
 
 ---
 
-Made with ❤️ by Phal Sovandy
+Made with dedication by Phal Sovandy
