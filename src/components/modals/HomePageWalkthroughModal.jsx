@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import homeGuide1 from "../../assets/images/homepage-walkthrough/Home-guide-1.png";
-import homeGuide2 from "../../assets/images/homepage-walkthrough/Home-guide-2.png";
-import homeGuide3 from "../../assets/images/homepage-walkthrough/Home-guide-3.png";
-import homeGuide4 from "../../assets/images/homepage-walkthrough/Home-guide-4.png";
-import homeGuide5 from "../../assets/images/homepage-walkthrough/Home-guide-5.png";
-import homeGuide6 from "../../assets/images/homepage-walkthrough/Home-guide-6.png";
+import homeGuide1 from "../../assets/images/homepage-walkthrough/home_guide_1.png";
+import homeGuide2 from "../../assets/images/homepage-walkthrough/home_guide_2.png";
+import homeGuide3 from "../../assets/images/homepage-walkthrough/home_guide_3.png";
+import homeGuide4 from "../../assets/images/homepage-walkthrough/home_guide_4.png";
+import homeGuide5 from "../../assets/images/homepage-walkthrough/home_guide_5.png";
+import homeGuide6 from "../../assets/images/homepage-walkthrough/home_guide_6.png";
 
 const HomePageWalkthroughModal = ({
   isOpen,

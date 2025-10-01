@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bmcLogo from "../../assets/images/bmc-logo.svg";
+import bmcLogo from "../../assets/images/bmc_logo.svg";
 
 const AboutModal = ({ isOpen, onClose }) => {
   const [coffeeModalOpen, setCoffeeModalOpen] = useState(false);

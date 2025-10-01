@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useFSM } from "../../context/FSMContext.jsx";
-import bmcLogo from "../../assets/images/bmc-logo.svg";
+import bmcLogo from "../../assets/images/bmc_logo.svg";
 import SettingsModal from "../modals/SettingsModal";
 import ImportJSONModal from "../modals/ImportJSONModal";
 import ImportOptionsModal from "../modals/ImportOptionsModal";

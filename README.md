@@ -1,9 +1,9 @@
 # Automata Drawing Tools
 
 <div align="center">
-  <img src="public/favicon.png" alt="Automata Drawing Tools Logo" width="80" height="80">
+  <img src="public/favicon_icon.png" alt="Automata Drawing Tools Logo" width="80" height="80">
   
-  <img src="public/assets/images/Repo-cover.jpeg" alt="Automata Drawing Tools - Repository Cover" width="100%">
+  <img src="public/assets/images/repo_cover.jpeg" alt="Automata Drawing Tools - Repository Cover" width="100%">
   
   <p><em>A modern React application for designing and visualizing finite state machines, pushdown automata, and Turing machines by Phal Sovandy.</em></p>
 </div>
@@ -25,8 +25,8 @@ Automata-Drawing-Tools/
 ├── public/                    # Public assets (copied to build)
 │   ├── assets/
 │   │   └── images/           # Static images (HTML references)
-│   │       └── Repo-cover.jpeg      # Repository cover image
-│   ├── favicon.png           # Site favicon (HTML reference)
+│   │       └── repo_cover.jpeg      # Repository cover image
+│   ├── favicon_icon.png      # Site favicon (HTML reference)
 │   ├── favicon.ico           # Site favicon (fallback)
 │   ├── manifest.json         # PWA manifest
 │   ├── robots.txt           # SEO robots file
@@ -34,9 +34,9 @@ Automata-Drawing-Tools/
 ├── src/
 │   ├── assets/
 │   │   └── images/           # Images and icons (imported as ES modules)
-│   │       ├── canvas-walkthrough/  # Canvas guide images
-│   │       ├── homepage-walkthrough/ # Homepage guide images
-│   │       └── bmc-logo.svg         # BuyMeACoffee logo
+│   │       ├── canvas-walkthrough/  # Canvas guide images (canvas_guide_*.png)
+│   │       ├── homepage-walkthrough/ # Homepage guide images (home_guide_*.png)
+│   │       └── bmc_logo.svg         # BuyMeACoffee logo
 │   ├── components/           # React components
 │   │   ├── layout/          # Layout components
 │   │   │   ├── HomePage.jsx

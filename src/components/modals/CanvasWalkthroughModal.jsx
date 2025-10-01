@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import canvasGuide1 from "../../assets/images/canvas-walkthrough/Canvas-guide-1.png";
-import canvasGuide2 from "../../assets/images/canvas-walkthrough/Canvas-guide-2.png";
-import canvasGuide3 from "../../assets/images/canvas-walkthrough/Canvas-guide-3.png";
-import canvasGuide4 from "../../assets/images/canvas-walkthrough/Canvas-guide-4.png";
-import canvasGuide5 from "../../assets/images/canvas-walkthrough/Canvas-guide-5.png";
-import canvasGuide6 from "../../assets/images/canvas-walkthrough/Canvas-guide-6.png";
-import canvasGuide7 from "../../assets/images/canvas-walkthrough/Canvas-guide-7.png";
+import canvasGuide1 from "../../assets/images/canvas-walkthrough/canvas_guide_1.png";
+import canvasGuide2 from "../../assets/images/canvas-walkthrough/canvas_guide_2.png";
+import canvasGuide3 from "../../assets/images/canvas-walkthrough/canvas_guide_3.png";
+import canvasGuide4 from "../../assets/images/canvas-walkthrough/canvas_guide_4.png";
+import canvasGuide5 from "../../assets/images/canvas-walkthrough/canvas_guide_5.png";
+import canvasGuide6 from "../../assets/images/canvas-walkthrough/canvas_guide_6.png";
+import canvasGuide7 from "../../assets/images/canvas-walkthrough/canvas_guide_7.png";
 
 const CanvasWalkthroughModal = ({ isOpen, onClose }) => {
   const [activeSection, setActiveSection] = useState(0);
