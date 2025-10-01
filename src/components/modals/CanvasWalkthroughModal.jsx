@@ -1,4 +1,11 @@
 import React, { useState, useEffect } from "react";
+import canvasGuide1 from "../../assets/images/canvas-walkthrough/Canvas-guide-1.png";
+import canvasGuide2 from "../../assets/images/canvas-walkthrough/Canvas-guide-2.png";
+import canvasGuide3 from "../../assets/images/canvas-walkthrough/Canvas-guide-3.png";
+import canvasGuide4 from "../../assets/images/canvas-walkthrough/Canvas-guide-4.png";
+import canvasGuide5 from "../../assets/images/canvas-walkthrough/Canvas-guide-5.png";
+import canvasGuide6 from "../../assets/images/canvas-walkthrough/Canvas-guide-6.png";
+import canvasGuide7 from "../../assets/images/canvas-walkthrough/Canvas-guide-7.png";
 
 const CanvasWalkthroughModal = ({ isOpen, onClose }) => {
   const [activeSection, setActiveSection] = useState(0);
@@ -29,43 +36,43 @@ const CanvasWalkthroughModal = ({ isOpen, onClose }) => {
       id: "welcome",
       title: "Canvas Workspace",
       icon: "fas fa-compass-drafting",
-      background: "/assets/images/canvas-walkthrough/Canvas-guide-1.png",
+      background: canvasGuide1,
     },
     {
       id: "navigation",
       title: "Pan & Zoom Controls",
       icon: "fas fa-expand-arrows-alt",
-      background: "/assets/images/canvas-walkthrough/Canvas-guide-2.png",
+      background: canvasGuide2,
     },
     {
       id: "states",
       title: "State Creation",
       icon: "fas fa-circle",
-      background: "/assets/images/canvas-walkthrough/Canvas-guide-3.png",
+      background: canvasGuide3,
     },
     {
       id: "transitions",
       title: "Transition Drawing",
       icon: "fas fa-link",
-      background: "/assets/images/canvas-walkthrough/Canvas-guide-4.png",
+      background: canvasGuide4,
     },
     {
       id: "customization",
       title: "Color & Styling",
       icon: "fas fa-palette",
-      background: "/assets/images/canvas-walkthrough/Canvas-guide-5.png",
+      background: canvasGuide5,
     },
     {
       id: "tools",
       title: "Sidebar Tools",
       icon: "fas fa-bars",
-      background: "/assets/images/canvas-walkthrough/Canvas-guide-6.png",
+      background: canvasGuide6,
     },
     {
       id: "export",
       title: "Save & Export",
       icon: "fas fa-save",
-      background: "/assets/images/canvas-walkthrough/Canvas-guide-7.png",
+      background: canvasGuide7,
     },
   ];
 

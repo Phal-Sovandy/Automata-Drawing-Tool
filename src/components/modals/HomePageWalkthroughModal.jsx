@@ -1,4 +1,10 @@
 import React, { useState, useEffect } from "react";
+import homeGuide1 from "../../assets/images/homepage-walkthrough/Home-guide-1.png";
+import homeGuide2 from "../../assets/images/homepage-walkthrough/Home-guide-2.png";
+import homeGuide3 from "../../assets/images/homepage-walkthrough/Home-guide-3.png";
+import homeGuide4 from "../../assets/images/homepage-walkthrough/Home-guide-4.png";
+import homeGuide5 from "../../assets/images/homepage-walkthrough/Home-guide-5.png";
+import homeGuide6 from "../../assets/images/homepage-walkthrough/Home-guide-6.png";
 
 const HomePageWalkthroughModal = ({
   isOpen,
@@ -39,37 +45,37 @@ const HomePageWalkthroughModal = ({
       id: "welcome",
       title: "Homepage Dashboard",
       icon: "fas fa-home",
-      background: "/assets/images/homepage-walkthrough/Home-guide-1.png",
+      background: homeGuide1,
     },
     {
       id: "storage",
       title: "Storage Gauge",
       icon: "fas fa-database",
-      background: "/assets/images/homepage-walkthrough/Home-guide-2.png",
+      background: homeGuide2,
     },
     {
       id: "diagrams",
       title: "Diagram Gallery",
       icon: "fas fa-th-large",
-      background: "/assets/images/homepage-walkthrough/Home-guide-3.png",
+      background: homeGuide3,
     },
     {
       id: "bulk",
       title: "Bulk Operations",
       icon: "fas fa-layer-group",
-      background: "/assets/images/homepage-walkthrough/Home-guide-4.png",
+      background: homeGuide4,
     },
     {
       id: "create",
       title: "Quick Create",
       icon: "fas fa-plus-circle",
-      background: "/assets/images/homepage-walkthrough/Home-guide-5.png",
+      background: homeGuide5,
     },
     {
       id: "actions",
       title: "Toolbar Actions",
       icon: "fas fa-tools",
-      background: "/assets/images/homepage-walkthrough/Home-guide-6.png",
+      background: homeGuide6,
     },
   ];
 

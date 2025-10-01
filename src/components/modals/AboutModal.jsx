@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import bmcLogo from "../../assets/images/bmc-logo.svg";
 
 const AboutModal = ({ isOpen, onClose }) => {
   const [coffeeModalOpen, setCoffeeModalOpen] = useState(false);
@@ -216,7 +217,7 @@ const AboutModal = ({ isOpen, onClose }) => {
                   <div className="support-option-header">
                     <div className="support-option-icon">
                       <img
-                        src="/assets/images/bmc-logo.svg"
+                        src={bmcLogo}
                         alt="BuyMeACoffee"
                         className="bmc-logo"
                       />

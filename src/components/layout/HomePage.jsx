@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useFSM } from "../../context/FSMContext.jsx";
+import bmcLogo from "../../assets/images/bmc-logo.svg";
 import SettingsModal from "../modals/SettingsModal";
 import ImportJSONModal from "../modals/ImportJSONModal";
 import ImportOptionsModal from "../modals/ImportOptionsModal";
@@ -962,7 +963,7 @@ const HomePage = ({ onNavigateToApp }) => {
                   <div className="support-option-header">
                     <div className="support-option-icon">
                       <img
-                        src="/assets/images/bmc-logo.svg"
+                        src={bmcLogo}
                         alt="BuyMeACoffee"
                         className="bmc-logo"
                       />
