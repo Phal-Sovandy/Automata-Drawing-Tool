@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import react from "@vitejs/plugin-react-swc";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   base: "/",
@@ -12,13 +11,11 @@ export default defineConfig({
   build: {
     outDir: "dist",
     sourcemap: true,
-    // Use esbuild for minification (default, no terser needed)
-    minify: "esbuild",
+    minify: "esbuild", // keep esbuild for speed
     target: "esnext",
     esbuild: {
-      drop: ["console", "debugger"], // removes console.log + debugger in prod
+      drop: ["console", "debugger"],
     },
-    // Enable chunk splitting for better caching
     rollupOptions: {
       output: {
         manualChunks: {
@@ -28,11 +25,9 @@ export default defineConfig({
       },
     },
   },
-  // SEO and performance optimizations
   define: {
     __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
   },
-  // Optimize dependencies
   optimizeDeps: {
     include: ["react", "react-dom", "framer-motion", "gsap"],
   },
